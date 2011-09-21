@@ -20,9 +20,9 @@ def main():
     parser.add_option('-p', '--smtp-port', dest='smtp_port', default=9969,
                         help='Set local smtp port')
     parser.add_option('-A', '--http-host', dest='http_host', default='127.0.0.1',
-                        help='Set local smtp host')
+                        help='Set http host')
     parser.add_option('-P', '--http-port', dest='http_port', default=9999,
-                        help='Set local smtp port')
+                        help='Set http port')
     parser.add_option('-d', '--debug', dest='debug', default=False)
 
     (options, args) = parser.parse_args(sys.argv)
