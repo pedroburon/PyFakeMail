@@ -15,13 +15,13 @@ def main():
     parser = OptionParser(usage="usage: %prog [options]")
     parser.add_option('-s', '--smtp', action='store_true', dest='smtp', default=False,
                         help='Just run fake smtp server')
-    parser.add_option('-a', '--smtp-host', dest='smtp_host', default='localhost',
+    parser.add_option('-a', '--smtp-host', dest='smtp_host', type='string', default='localhost',
                         help='Set local smtp host')
-    parser.add_option('-p', '--smtp-port', dest='smtp_port', default=9969,
+    parser.add_option('-p', '--smtp-port', dest='smtp_port', type='int', default=9969,
                         help='Set local smtp port')
-    parser.add_option('-A', '--http-host', dest='http_host', default='127.0.0.1',
+    parser.add_option('-A', '--http-host', dest='http_host', type='string', default='127.0.0.1',
                         help='Set http host')
-    parser.add_option('-P', '--http-port', dest='http_port', default=9999,
+    parser.add_option('-P', '--http-port', dest='http_port', type='int', default=9999,
                         help='Set http port')
     parser.add_option('-d', '--debug', dest='debug', default=False)
 
